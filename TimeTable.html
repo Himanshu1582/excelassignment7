@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr{
+            height: 60px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        td{   
+            border: 2px solid black;
+        }
+        th{
+            border: 2px solid black;
+            width: 11.11%;
+            background-color:gray;
+        }
+        #classname{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif ;
+            font-style: italic;
+        }
+        tr:nth-child(odd){
+            background-color:lightgray;
+        }
+        .collunch{
+        background-color: aliceblue;
+        }
+        #lunch{
+            font-size: large;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="classname"><h2>Table:Class Time Table</h2></div>
+    <div>
+        <table>
+            <colgroup span="4" class="col1sthalf"></colgroup>
+            <colgroup span="1" class="collunch"></colgroup>
+            <colgroup span="4" class="colsecondhalf"></colgroup>
+            <tr >
+                <th>Day/Period</th>
+                <th>9.30-10.20</th>
+                <th>10.20-11.10</th>
+                <th>11.10-12.00</th>
+                <th>12.00-12.40</th>
+                <th>12.40-01.30</th>
+                <th>01.30-02.20</th>
+                <th>02.20-03.10</th>
+                <th>03.10-04.00</th>
+
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>maths</td>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td id="lunch"rowspan="6">
+                    <div><b>L</b></div><BR>
+                    <div><b>U</b></div><br>
+                    <div><b>N</b></div><br>
+                    <div><b>C</b></div><br>
+                    <div><b>H</b></div></td>
+                <td colspan="3">lab</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="3">Lab</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Chemistry</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>maths</td>
+                <td>Physics</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td colspan="3">lab</td>
+                
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>maths</td>
+                <td>English</td>
+                <td>English</td>
+                <td colspan="3">lab</td>
+                <td>Physics</td>
+                
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td colspan="3">lab</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td colspan="3">seminar</td>
+                <td>Physics</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+</body>
+</html>
